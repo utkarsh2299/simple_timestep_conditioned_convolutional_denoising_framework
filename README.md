@@ -1,4 +1,4 @@
-# 🎧 Audio Diffusion-Based Denoising Model (PyTorch)
+# simple_timestep_conditioned_convolutional_denoising_framework (PyTorch)
 
 A PyTorch-based **audio denoising system** inspired by diffusion modeling principles.
 This project trains a convolutional encoder–decoder network with sinusoidal time embeddings to reconstruct clean audio from noisy inputs using combined STFT and L1 losses.
