@@ -102,7 +102,7 @@ If `gl_audio/` does not exist, the script will automatically:
   ```
   noisy_filename.wav
   ```
-
+NOTE: Here you can change the NOISE types.
 ---
 
 ##  Training
