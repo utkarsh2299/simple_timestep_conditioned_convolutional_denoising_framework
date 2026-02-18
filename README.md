@@ -5,20 +5,20 @@ This project trains a convolutional encoder–decoder network with sinusoidal ti
 
 ---
 
-## 🚀 Features
+##  Features
 
-* 🔊 Controlled noisy audio generation with configurable SNR
-* 🎼 STFT-based magnitude + phase loss
-* 🧠 Diffusion-style sinusoidal timestep embeddings
-* 🏗 Conv1D Encoder–Decoder architecture with dropout
-* 📈 Warmup + OneCycleLR learning rate scheduling
-* ✂️ Gradient clipping for stable training
-* 💾 Automatic best-checkpoint saving
-* 🎧 Segment-wise inference for long audio
+*  Controlled noisy audio generation with configurable SNR
+*  STFT-based magnitude + phase loss
+*  Diffusion-style sinusoidal timestep embeddings
+*  Conv1D Encoder–Decoder architecture with dropout
+*  Warmup + OneCycleLR learning rate scheduling
+*  Gradient clipping for stable training
+*  Automatic best-checkpoint saving
+*  Segment-wise inference for long audio
 
 ---
 
-## 🏗 Model Architecture
+##  Model Architecture
 
 The model consists of:
 
@@ -42,7 +42,7 @@ The model consists of:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 .
@@ -55,7 +55,7 @@ The model consists of:
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### 1️⃣ Clone the repository
 
@@ -80,7 +80,7 @@ pip install librosa numpy scipy soundfile
 
 ---
 
-## 🎼 Dataset Preparation
+##  Dataset Preparation
 
 Place your clean `.wav` files inside:
 
@@ -103,7 +103,7 @@ If `gl_audio/` does not exist, the script will automatically:
 
 ---
 
-## 🧪 Training
+##  Training
 
 Run:
 
@@ -123,7 +123,7 @@ python train_diff_new.py
 
 ---
 
-## 📉 Loss Function
+##  Loss Function
 
 Training uses a combination of:
 
@@ -144,7 +144,7 @@ Weight decay in AdamW handles L2 regularization.
 
 ---
 
-## 📈 Learning Rate Strategy
+##  Learning Rate Strategy
 
 Training uses a two-stage scheduler:
 
@@ -158,7 +158,7 @@ This stabilizes early training and improves convergence.
 
 ---
 
-## 💾 Checkpoints
+##  Checkpoints
 
 Best model (lowest validation loss) is automatically saved:
 
@@ -176,7 +176,7 @@ Saved state includes:
 
 ---
 
-## 🎧 Inference (Denoising)
+##  Inference (Denoising)
 
 Use:
 
@@ -198,7 +198,7 @@ denoise_audio(
 
 ---
 
-## 🧠 Diffusion Design Notes
+##  Diffusion Design Notes
 
 Although simplified compared to full DDPMs:
 
@@ -211,7 +211,7 @@ This behaves like a **conditional denoising diffusion-inspired network** rather 
 
 ---
 
-## 📊 Recommended Improvements
+##  Recommended Improvements
 
 Future work ideas:
 
@@ -225,7 +225,7 @@ Future work ideas:
 
 ---
 
-## 🖥 Hardware Recommendations
+##  Hardware Recommendations
 
 * GPU recommended (CUDA)
 * 8GB+ VRAM suggested
@@ -233,7 +233,7 @@ Future work ideas:
 
 ---
 
-## 🛠 Key Components in Code
+## Key Components in Code
 
 * `STFT` — Differentiable STFT module
 * `STFTLoss` — Magnitude + phase loss
@@ -245,7 +245,7 @@ Future work ideas:
 
 ---
 
-## 📌 Example Workflow
+##  Example Workflow
 
 1. Add clean files to `gt_audio/`
 2. Run training
@@ -255,5 +255,5 @@ Future work ideas:
 
 ---
 
-## 📜 License
+##  License
 
