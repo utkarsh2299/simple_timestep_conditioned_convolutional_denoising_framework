@@ -1,6 +1,6 @@
 # simple_timestep_conditioned_convolutional_denoising_framework (PyTorch)
 
-NOTE: THis is some experiment I was trying to do for learning Diffusion models. This is just tryout code, very basic.
+NOTE: THis is some experiment I was trying to do for learning Diffusion models. This is just tryout code, improved with LLMs, very basic.
 
 A PyTorch-based **audio denoising system** inspired by diffusion modeling principles.
 This project trains a convolutional encoder–decoder network with sinusoidal time embeddings to reconstruct clean audio from noisy inputs using combined STFT and L1 losses.
